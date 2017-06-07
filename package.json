@@ -1,0 +1,19 @@
+{
+  "name": "geoff",
+  "version": "0.1.0",
+  "description": "Custom WordPress theme for Geoff Hing's personal website.",
+  "main": "index.js",
+  "author": "Geoff Hing <geoffhing@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "4.0.0-alpha.6",
+    "node-sass": "^4.5.3",
+    "yarn-run-all": "^3.1.1"
+  },
+  "scripts": {
+    "build:styles": "node-sass --include-path node_modules/bootstrap/scss static/src/scss/style.scss style.css",
+    "build": "run-p build:styles",
+    "watch:styles": "node-sass --watch --include-path node_modules/bootstrap/scss static/src/scss/style.scss style.css",
+    "watch": "run-p watch:styles"
+  }
+}

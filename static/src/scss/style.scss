@@ -1,0 +1,52 @@
+/*
+ * Theme Name: Geoff 
+ * Description: Starter Theme to use with Timber
+ * Author: Geoff Hing <geoffhing@gmail.com> 
+*/
+
+@import 'bootstrap';
+
+.navbar {
+  // TODO: Better color than black
+  border-bottom: 1px solid $gray-dark;
+}
+
+.content {
+  margin-top: 2rem;
+}
+
+.tease {
+  margin-bottom: 3rem;
+
+  figure {
+    max-width: 100%;
+  }
+
+  figcaption {
+    color: $gray-light;
+    font-size: 0.8em;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  iframe {
+    max-width: 100%;
+  }
+}
+
+.tease__title {
+  a {
+    color: $gray-dark;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.tease__date {
+  margin-bottom: 1.6rem;
+}

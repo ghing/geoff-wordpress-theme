@@ -1,0 +1,9 @@
+<article class="tease tease--{{post.post_type}}" id="tease-{{post.ID}}">
+  {% block content %}
+  <h2 class="tease__title"><a href="{{post.link}}">{{post.title}}</a></h2>
+
+  <p class="tease__date">{{ post.post_date|date}}</p>
+
+  {{post.content}}
+  {% endblock %}
+</article>
